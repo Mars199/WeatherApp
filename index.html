@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="container px-3 py-5 text-center">
+            <!--Search Input-->
+            <input type="text" class="w-100 mx-auto rounded-5 py-3 px-4 bg-main-color mb-5 text-white"
+                placeholder="Find your location..." id="search" />
+            <div class="row g-0">
+
+                <!--Today Data Section-->
+                <div class="item col-md-4 bg-sec-color m-0 rounded-4">
+                    <div class="d-flex justify-content-between py-2 px-3 bg-main-color text-light rounded-start"
+                        id="today-date">
+                        <p id="today_date_day_name" class="my-auto"></p>
+                        <span>
+                            <span id="today_date_day_number" class="my-auto"></span>
+                            <span id="today_date_month" class="my-auto"></span>
+                        </span>
+                    </div>
+                    <div class="item-content text-start px-3 py-3 pt-5 text-light" id="today">
+                        <p id="today_location" class="fs-4"></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-1 fw-bolder">
+                                <span id="today_temp"></span>
+                                <span><sup>o</sup> C</span>
+                            </span>
+                            <img id="today_condition_img" src="images/116.png" alt="" />
+                        </div>
+                        <p id="today_condition_text" class="fs-6 text-light-blue">sunny</p>
+                    </div>
+                    <div class="item-footer d-flex text-light p-3">
+                        <div class="d-flex me-3">
+                            <img src="images/icon-umberella.png" class="footer-icons me-2" alt="" />
+                            <p id="humidity">20</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="images/icon-wind.png" class="footer-icons mx-2" alt="" />
+                            <p id="wind">30 km/h</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/icon-compass.png" class="footer-icons mx-2" alt="" />
+                            <p id="wind_direction">NNE</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tomorrow Data Section-->
+                <div class="item col-md-4 m-0 bg-main-color">
+                    <div class="py-2 text-center bg-sec-color text-light">
+                        <p class="next_day_name my-auto">Friday</p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5">
+                        <img class="next_condition_img" src="images/113.png" alt="">
+                        <h3>
+                            <span class="next_max_temp"></span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-muted">
+                            <span class="next_min_temp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="next_condition_text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+                </div>
+
+                <!--After Tomorrow Data Section-->
+                <div class="item col-md-4 m-0 bg-sec-color rounded-4">
+                    <div class="py-2 text-center px-3 bg-main-color text-light rounded-end">
+                        <p class="next_day_name my-auto">Friday</p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5">
+                        <img class="next_condition_img" src="images/113.png" alt="">
+                        <h3>
+                            <span class="next_max_temp"></span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-muted">
+                            <span class="next_min_temp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="next_condition_text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
